@@ -1,5 +1,6 @@
 import './App.css';
 import { Navbar } from './Navbar';
+import { Home } from './Home';
 
 //jsx code - template with logic
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="content">
-        hello
+        <Home />
       </div>
       
     </div>
