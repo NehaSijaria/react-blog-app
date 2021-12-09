@@ -8,3 +8,4 @@
 //IMP => {} means dynamic variable inside return element.... but only number/string/array  [AS A STRING]. No object/boolean can be accesses
 //dynamic value for quotes like in <a href = {}, no quotes needed
 //App component: root component 
+//hooks start with use, and import from react lib
