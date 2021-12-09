@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-
+// only component(which is function) that is responsible for rendering.code written in jsx.
 ReactDOM.render(
   <React.StrictMode>
     <App />
