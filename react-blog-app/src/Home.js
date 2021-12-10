@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BlogList } from "./BlogList";
 
 export const Home = () => {
   let blogDesc = [
@@ -7,10 +8,12 @@ export const Home = () => {
     { title: 'Weekend-Cheat-Foods', body: 'lorem ipsum...', author: 'sam', id: 3 }
   ]
   //initial value will be array of blogs
- 
+  const [blogs, setBlogs] = useState(blogDesc)
+
   return (
     <div className="home">
-      <BlogList />
+      <BlogList blogDesc={blogDesc} title="My Blog List" />
+      <BlogList blogDesc={blogDesc.filter((blog) => blog.author === 'sam')} title="Sam's Blog List" />
     </div>
   )
 }
